@@ -14,7 +14,7 @@ typedef struct bt BST;	 // The Binary Search Tree structure
 // The only two operations allowed are 'find', and 'insert'.
 // You can also provide a 'print' function.
 BSTDataSet find(BST *root, BSTData target);
-BST *newElement(BSTData target, BSTDataSet index);
 BST *insert(BST *root, BSTData target, BSTDataSet index);
 
-void print(BST *root);
+void print2(BST *root, int space); // This function prints the leaves in  the order they were inserted in
+void print(BST *root); // The wrapper of the function 'print2' // A smoother way to initialize the space

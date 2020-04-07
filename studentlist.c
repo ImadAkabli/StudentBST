@@ -15,7 +15,7 @@ void main() {
 	Student *temp = NULL;
 	BST *byname = NULL;
 	BST *byID = NULL;
-	int i;
+	int i, val;
 	
 	for(i = 0; i < 3; i++) {
 		byname = insert(byname, students[i].name, (void *) (&students[i]));
@@ -29,8 +29,8 @@ void main() {
 	if(temp != NULL) printf("problem with 222...\n");
 	else printf("222 is not in the ID list.\n");
 	temp = find(byname, "Omar");
-	if(temp != NULL) printf("%s is %s in the name list!\n", temp->name, temp->id);
-	else printf("problem with Omar...\n");	
+	if(temp != NULL) printf("%s is %s in the name list!\n\n", temp->name, temp->id);
+	else printf("problem with Omar...\n\n");	
 	printf("Ordered by name: \n");
 	print(byname);
 	printf("\nOrdered by ID: \n");
